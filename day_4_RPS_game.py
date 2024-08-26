@@ -4,7 +4,7 @@ import art
 import random
 
 # printing the opening banner
-print(art.logo)
+print(art.logo_RPS)
 game_over = False
 
 while not game_over:
