@@ -24,28 +24,17 @@ while not game_over:
 
             # 👊 ✋ ✌️
 
-            if user_choice == 0:
-                if computers_choice == 1:
-                    print('You lose')
-                elif computers_choice == 2:
-                    print('You Win')
-                elif computers_choice == 0:
-                    print('Tied')
-            elif user_choice == 1:
-                if computers_choice == 1:
-                    print('Tied')
-                elif computers_choice == 2:
-                    print('You Lose')
-                elif computers_choice == 0:
-                    print('You win')
-            elif user_choice == 2:
-                if computers_choice == 1:
-                    print('You win')
-                elif computers_choice == 2:
-                    print('Tied')
-                elif computers_choice == 0:
-                    print('You Lose')
+            if user_choice == 0 and computers_choice == 2:
+                print('You win 🤩')
+            elif computers_choice == 0 and user_choice == 2:
+                print('You Lose ☹️')
+            elif user_choice > computers_choice:
+                print('You win 🤩')
+            elif computers_choice > user_choice:
+                print('You Lose ☹️')
+            elif user_choice == computers_choice:
+                print("It's a draw 🙃")
 
     else:
         game_over = True
-        print("Good bye!\nGame over!!!!")
+        print("Game over!!!!\nGood bye!")
